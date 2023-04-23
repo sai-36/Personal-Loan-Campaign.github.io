@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+	font-family: sans-serif;	
+    background-image: url("https://wallpaperaccess.com/full/187161.jpg");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	/* background-size: cover; */
+}
+
+.container {
+	width: 580px;
+
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+}
+
+.header {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.header h1 {
+	color: #333;
+	font-size: 45px;
+	margin-bottom: 80px;
+}
+
+.main {
+	text-align: center;
+}
+
+.main input, button {
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color: #83acf1;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #7799d4;
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top: 2px;
+}
+
+
+</style>
+</head>
+<body>
+ <div class="container">
+ 	<div class="header">
+ 		<h1>Personal Loan Predictor</h1>
+ 	</div>
+ 	<div class="main">
+
+	
+ 		
+<div style="height: 400px; overflow: auto;">
+	   <form action="/predict" method="post">
+ 			
+ 				
+			 <span>
+				
+				<label>CUSTOMER ID</label><br>
+				<input type="text" placeholder="ID" name="id">
+			</span><br>
+ 			<span>
+ 				
+				 <label> CUSTOMER'S AGE IN COMPLETED YEARS</label><br>
+ 				<input type="text" placeholder="Age" name="age">
+ 			</span><br>
+			 <span>
+				
+				<label>NUMBER YEARS OF PROFESSIONAL EXPERIENCE</label><br>
+				<input type="text" placeholder="Experience" name="experience">
+			</span><br>
+			<span>
+				<label>ANNUAL INCOME OF THE CUSTOMER</label><br>
+				<input type="text" placeholder="Income" name="income">
+			</span><br>
+			<span>
+				<label>HOME ADDRESS ZIP CODE</label><br>
+				<input type="text" placeholder="ZIP Code" name="zip">
+			</span><br>
+			<span>
+				<label>FAMILY SIZE  OF THE CUSTOMER(1,2,3,4)</label><br>
+				<input type="text" placeholder="Family" name="family">
+			</span><br>
+			<span>
+				<label>AVERAGE SPENDING ON CREDIT CARD PER MONTH</label><br>
+				<input type="text" placeholder="CC Avg" name="ccavg">
+			</span><br>
+			<span>
+				<label>EDUCATION LEVEL(1:UNDERGRAD,2:GRADUATE,3:ADVANCED)</label><br>
+				<input type="text" placeholder="Education" name="education">
+			</span><br>
+			<span>
+				<label>VALUE OF HOUSE MORTGAGE IF ANY</label><br>
+				<input type="text" placeholder="Mortgage" name="mortgage">
+			</span><br>
+			<span>
+				<label>DO YOU HAVE ANY SECURITIES ACCOUNT(1:IF ANY,0:NONE)</label><br>
+				<input type="text" placeholder="Securities Account" name="sa">
+			</span><br>
+			<span>
+				<label>DO YOU HAVE ANY CD ACCOUNT(1:IF ANY,0:NONE)</label><br>
+				<input type="text" placeholder="CD Account" name="cd">
+			</span><br>
+			<span>
+				<label>DO YOU HAVE ANY INTERNET BANKING FACILITIES(1:IF ANY,0:NONE)</label><br>
+				<input type="text" placeholder="Online" name="online">
+			</span><br>
+			<span>
+				<label>DO YOU HAVE ANY CREDIT CARD(1:IF ANY,0:NONE)</label><br>
+				<input type="text" placeholder="Credit Card" name="cc">
+			</span><br>
+ 				<button>Submit</button>
+
+ 		</form>
+ 	</div>
+	</div>
+ </div>
+</body>
+</html>
